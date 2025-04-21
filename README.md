@@ -1,1 +1,0 @@
-# VladislavSat.gethub.io
