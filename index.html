@@ -338,6 +338,29 @@
                 display: none;
             }
         }
+        
+        /* Исправление выравнивания иконок в футере */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Добавлено для вертикального выравнивания */
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.footer-social .whatsapp-link,
+.footer-social .phone-link {
+    font-size: 24px; /* Унифицированный размер */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social .phone-link {
+    color: white; /* Чтобы цвет соответствовал ватсапу */
+    text-decoration: none;
+}
+        
     </style>
 </head>
 <body>
@@ -465,20 +488,20 @@
 </section>
 	
     <!-- Футер -->
-    <footer>
-        <div class="container">
-            <p>© 2025 PawEmbroidery - вышивка для питомцев</p>
-            <div class="footer-social">
-                <a href="https://wa.me/79770309570" class="whatsapp-link">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="tel:+79770309570">
-                    <i class="fas fa-phone-alt"></i>
-                </a>
-            </div>
-            <p>Доставка по России</p>
+<footer>
+    <div class="container">
+        <p>© 2025 PawEmbroidery - вышивка для питомцев</p>
+        <div class="footer-social">
+            <a href="https://wa.me/79770309570" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+79770309570" class="phone-link">
+                <i class="fas fa-phone-alt"></i>
+            </a>
         </div>
-    </footer>
+        <p>Доставка по России</p>
+    </div>
+</footer>
 
     <script>
         // Инициализация карусели работ
