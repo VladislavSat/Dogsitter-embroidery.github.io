@@ -259,39 +259,32 @@
         }
 
         /* Форма заказа */
-        .order-section {
+     .order-section {
             padding: 60px 0;
             background: #ffefe5;
+            text-align: center;
         }
         
-        /* Добавьте в секцию стилей */
-.order-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
+        .order-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .order-list {
+            text-align: left;
+            width: fit-content;
+            margin: 15px auto;
+            padding-left: 20px;
+        }
+        
+        .order-list li {
+            margin-bottom: 8px;
+        }
+        
+        .btn-container {
+            margin-top: 30px;
+        }
 
-.order-container h2 {
-    text-align: center;
-}
-
-.order-container p {
-    text-align: justify;
-    text-align-last: left;
-    margin: 0 auto 20px;
-    max-width: 500px;
-}
-
-.order-container ol {
-    width: fit-content;
-    margin: 0 auto;
-    padding-left: 20px;
-}
-
-.order-container .btn-container {
-    margin-top: 30px;
-    text-align: center;
-}
 
         /* Футер */
         footer {
@@ -431,26 +424,26 @@
         </div>
     </section>
 
-    <!-- Форма заказа -->
-    	<section id="order" class="order-section">
-    <div class="order-container">
-        <h2>Как заказать</h2>
-        <p>Пришлите нам в WhatsApp:</p>
-        <ol>
-            <li>Пожелания по дизайну</li>
-            <li>Укажите имя собаки</li>
+<!-- Форма заказа -->
+    <section id="order" class="order-section">
+        <div class="order-container">
+            <h2>Как заказать</h2>
+            <p>Пришлите нам в WhatsApp:</p>
+            <ol class="order-list">
+                <li>Пожелания по дизайну</li>
+                  <li>Укажите имя собаки</li>
             <li>Сообщите, если нужно что-то особенное</li>
-        </ol>
-        <p>Мы свяжемся с вами для уточнения деталей и оформления.</p>
-        <div class="btn-container">
-            <a href="https://wa.me/79770309570?text=Хочу заказать вышивку на салфетке!" 
-               class="btn" 
-               target="_blank">
-                <i class="fab fa-whatsapp"></i> Написать в WhatsApp
-            </a>
+            </ol>
+            <p>Мы свяжемся с вами и уточним детали</p>
+            <div class="btn-container">
+                <a href="https://wa.me/79770309570?text=Хочу заказать вышивку на салфетке!" 
+                   class="btn" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
    
     <!-- Футер -->
     <footer>
