@@ -35,7 +35,7 @@
     <meta name="apple-mobile-web-app-title" content="PawEmbroidery" />
     <link rel="manifest" href="/site.webmanifest" />
     
-    <!-- Оптимизация загрузки шрифтов -->
+    <!-- Стили Font Awesome с оптимизацией -->
     <style>
         /* Font Awesome с font-display: swap */
         @font-face {
@@ -50,7 +50,14 @@
             src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-solid-900.woff2') format('woff2');
             font-weight: 900;
         }
-        
+
+        /* Временные стили для иконок */
+        .fa-paw, .fa-whatsapp, .fa-phone-alt {
+            font-family: 'Font Awesome 6 Free' !important;
+            font-weight: 900;
+            color: inherit;
+        }
+
         /* Основные стили */
         body {
             font-family: 'Arial', sans-serif;
@@ -138,7 +145,7 @@
             transform: scale(1.1);
         }
 
-        /* Герой-блок */
+        /* Герой-блок с исправленной кнопкой */
         .hero {
             background: 
                 linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -222,6 +229,7 @@
             height: 200px;
             object-fit: cover;
             object-position: center;
+            loading: lazy;
         }
         
         .work-info {
@@ -393,14 +401,14 @@
         </div>
     </header>
 
-    <!-- Герой-блок -->
+    <!-- Герой-блок с исправленной кнопкой -->
     <section class="hero">
         <div class="container">
             <h1>Эксклюзивные салфетки для лап с вышивкой</h1>
             <p>Персонализированный аксессуар для вашего питомца</p>
             <p>от <strong>350 ₽</strong> за штуку</p>
-            <a href="#order" class="btn">
-                <i class="fas fa-paw"></i> Заказать вышивку
+            <a href="#order" class="btn" style="color: white !important;">
+                <i class="fas fa-paw" style="color: white !important;"></i> Заказать вышивку
             </a>
         </div>
     </section>
